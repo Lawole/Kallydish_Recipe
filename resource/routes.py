@@ -145,7 +145,6 @@ class RefreshToken(Resource):
         return {"refresh_token": refresh_token}, 200
 
 
-
 @user.route("/logout")
 class Logout(Resource):
     @jwt_required(refresh=True)
@@ -367,7 +366,7 @@ class LikeDish(Resource):
         db.session.commit()
 
         return {"message": "Dish liked successful"}
-     
+
 
 # Get all the dishes by a particular user
 @dish.route("/user/<int:user_id>")

@@ -60,6 +60,7 @@ class UserLogin(db.Model):
 
 
 class RevokeToken(db.Model):
+
     id = db.Column(db.Integer, primary_key=True)
     jti = db.Column(db.String, unique=True, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
