@@ -5,8 +5,11 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_restx import Api
 from flask_bcrypt import Bcrypt
 
+
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:password@localhost:5433/kally"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://kally_user:YZV7XuuWXYmxClQubT9T4MLkdXoPkSQV@dpg-clt4uf8l5elc73dk3tb0-a.oregon-postgres.render.com/kally"
+# /"postgresql://postgres:password@localhost:5432/kally"
+# postgresql://kally_user:YZV7XuuWXYmxClQubT9T4MLkdXoPkSQV@dpg-clt4uf8l5elc73dk3tb0-a.oregon-postgres.render.com/kally
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config["SECRET_KEY"] = "EGGRO11$$123"
 db = SQLAlchemy(app)
