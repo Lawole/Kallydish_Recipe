@@ -20,7 +20,7 @@ bcrypt = Bcrypt(app)
 
 from resource import models
 
-api = Api(app, version="1.0", title="Food Valve", description="API for your KallyDish")
+api = Api(app, version="1.0", title="Food Valve", description="API for FoodValve")
 
 from resource.routes import user, dish
 
